@@ -1,0 +1,400 @@
+.people
+    font-family $ff-BebasNeueBold
+    position relative
+    background-color $c-black
+    width 100%
+    // height w(8002)
+
+    &__header
+        display flex
+        align-items center
+        padding w(35) 0 0 w(120)
+        gap w(450)
+
+    &__logo-title
+        color $c-logo
+        font-size w(64)
+        padding w(30)
+
+
+    &__content
+        position relative
+        padding-top w(300)
+        padding-left w(400)
+        &:nth-child(2n+2)
+            padding-left w(530)
+        &:nth-child(5)
+            padding-top w(110)
+        &:nth-child(6)
+            padding-top w(180)
+        &:nth-child(7)
+            padding-left w(300)
+        &:nth-child(8)
+            padding-left w(720)
+            padding-top w(260)
+        &:nth-child(9)
+            padding-left w(420)
+            padding-top w(30)
+
+
+    // &__content-shift
+    //     padding-left w(530)
+        
+
+    &__container-title
+        position relative
+        font-size w(128)
+        font-weight 700
+    
+    &__letter
+        position absolute
+        width w(437)
+        height w(546)
+        left 0
+        top 0
+
+    &__letter-dwarf
+        top w(140)
+        left w(320)
+
+    &__letter-vasilisa
+        width w(370)
+        height w(462)
+        top w(140)
+        left w(70)
+
+    &__letter-mikhalych
+        top w(160)
+        left w(330)
+        z-index 2
+        width w(458)
+        height w(573)
+
+    &__letter-fedorova
+        top w(-75)
+        left w(140)
+        width w(400)
+        height w(500)
+        z-index 3
+
+    &__letter-hare
+        width w(400)
+        height w(500)
+        top w(70)
+        left w(380)
+
+    &__letter-elizarov
+        width w(400)
+        height w(500)
+        top w(190)
+        left w(20)
+
+    &__letter-ravens
+        position absolute
+        top w(100)
+        left w(350)
+        width w(381)
+        height w(538)
+
+    &__letter-krasnova
+        position absolute
+        top w(-120)
+        left w(50)
+        width w(354)
+        height w(500)
+
+
+    &__title-red
+        background conic-gradient(from 180deg at 21% 0%, #BE041B 0deg, #FF3500 360deg)
+        background-clip text
+        -webkit-background-clip text
+        -webkit-text-fill-color transparent
+
+    &__title-dwarf
+        background conic-gradient(from 180deg at 32% 50%, #BE4320 0deg, #A1280C 101.22893929481506deg, #B0704A 341.23327016830444deg)
+        background-clip text
+        -webkit-background-clip text
+        -webkit-text-fill-color transparent
+
+    &__title-vasilisa
+        background conic-gradient(from 180deg at 10% 90%, #4521E4 0deg, #FB832C 101.22893929481506deg, #3819EB 296.2324547767639deg, #C16975 358.1085705757141deg)
+        background-clip text
+        -webkit-background-clip text
+        -webkit-text-fill-color transparent
+        padding w(60) 0 0 w(40)
+
+    &__title-mikhalych
+        background conic-gradient(from 180deg at 30% 70%, #3747E2 0deg, #B767B7 157.47994780540466deg, #528C6B 360deg)
+        background-clip text
+        -webkit-background-clip text
+        -webkit-text-fill-color transparent
+        padding w(125) 0 0 w(205)
+
+    &__title-fedorova
+        background conic-gradient(from 180deg at 27% 90%, #FEC059 0deg, #C23277 360deg)
+        background-clip text
+        -webkit-background-clip text
+        -webkit-text-fill-color transparent
+        padding w(60) 0 0 w(40)
+
+    &__title-krasnova
+        background conic-gradient(from 180deg at 50% 50%, #F4730B 0deg, #8CDBA7 119.9792754650116deg, #DCB229 360deg)
+        background-clip text
+        -webkit-background-clip text
+        -webkit-text-fill-color transparent
+
+
+    &__title-hare
+        padding w(50) 0 0 w(190)
+        p
+            background: conic-gradient(from 180deg at 9% 50%, #ECE61C 0deg, #E3A51C 174.3552589416504deg, #3CC734 346.85837745666504deg);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            &:last-child
+                background: conic-gradient(from 180deg at 19% 50%, #ECE61C 0deg, #E3A51C 174.3552589416504deg, #3CC734 346.85837745666504deg);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                padding 0 0 0 w(55)
+
+    &__title-elizarov
+        background conic-gradient(from 180deg at 19% 80%, #FEC059 0deg, #C23277 360deg)
+        background-clip text
+        -webkit-background-clip text
+        -webkit-text-fill-color transparent
+        padding w(60) 0 0 0
+
+    &__title-ravens
+        p
+            &:nth-child(1)
+                background: conic-gradient(from 180deg at 13% 50%, #391AF5 0deg, #E55D1A 142.47968316078186deg, #3716DD 253.10667514801025deg, #7D2E51 360deg);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+            &:nth-child(2)
+                background: conic-gradient(from 180deg at 25% 70%, #391AF5 0deg, #E55D1A 142.47968316078186deg, #3716DD 253.10667514801025deg, #7D2E51 360deg);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                padding 0 0 0 w(75)
+
+
+
+    &__container-content-text
+        position relative
+        z-index 2
+
+    &__container-text
+        color $c-text
+        font-family $ff-BerlingskeSerif-Lt
+        margin-top w(22)
+        width w(810)
+        font-size w(24)
+        line-height w(36)
+
+    &__container-text-shift
+        margin-left w(250)
+        width w(680)
+
+    &__container-text-shift-less
+        padding 0 w(110) 0 w(100)
+
+    &__container-text-mikhalych
+        margin-left w(240)
+        width w(753)
+
+    &__container-text-fedorova
+        margin-left w(135)
+        width w(782)
+
+    &__container-text-hare
+        margin w(50) 0 0 w(250)
+        width w(670)
+
+    &__container-text-elizarov,
+    &__container-text-ravens,
+    &__container-text-krasnova
+        margin-left w(115)
+        width w(675)
+
+    &__container-text-ravens
+        margin-left w(190)
+        width w(675)
+
+    &__container-text-krasnova
+        margin-left 0
+
+
+
+    &__popov-img
+        position absolute
+        width w(700)
+        height w(977)
+        top w(140)
+        right 0
+
+    &__gramophone-img
+        position absolute
+        width 100%
+        height w(733)
+        top w(650)
+        right 0
+
+    &__vasilisa-img
+        position absolute
+        width w(532)
+        height w(666)
+        top w(295)
+        left w(90)
+
+    &__frog-img
+        position absolute
+        width w(356)
+        height w(351)
+        top w(360)
+        right w(340)
+
+    &__mikhalych-img
+        position absolute
+        width 96%
+        height w(730)
+        left 0
+        top 0
+
+    &__fedorova-img
+        position absolute
+        width w(800)
+        height w(800)
+        top w(-200)
+        right 0
+
+    &__prediety-img
+        width 89%
+        position absolute
+        left 0
+        top w(500)
+
+    &__man-hare-img
+        position absolute
+        width w(273)
+        height w(750)
+        top w(250)
+        left w(80)
+
+    &__watering-can-img
+        position absolute
+        width w(444)
+        height w(574)
+        top w(120)
+        right w(370)
+
+    &__stars-img
+        position absolute
+        right w(280)
+        top w(80)
+        width w(936)
+        height w(281)
+
+    &__voron-img
+        position absolute
+        bottom w(300)
+        right w(495)
+        z-index 2
+        width w(338)
+        height w(295)
+
+    &__stars-ravens-img
+        position absolute
+        right w(50)
+        top w(-20)
+        width w(936)
+        height w(281)
+
+    &__button
+        position relative
+        margin-top w(45)
+        width w(705) 
+        display flex
+        gap w(34)
+        z-index 2
+        +below(720px)
+            width 100%
+            margin-top wm(30)
+            gap wm(24)
+
+    
+    &__button-link
+        display flex
+        align-items center
+        justify-content center
+        text-transform uppercase
+        color $c-white
+        text-decoration none
+        background-color $c-btn
+        font-size w(48)
+        border-radius w(15)
+        width w(295)
+        height w(64)
+        transition 0.5s
+        &:last-child
+            width w(242)
+        &:hover
+            background-color $c-btn-hover
+        +below(720px)
+            width wm(242)
+            height wm(64)
+            border-radius wm(15)
+            font-size wm(48)
+            padding-top wm(10)
+
+    &__vidio
+        width w(798)
+        height w(383)
+        margin w(60) w(320)
+
+    &__signature
+        position relative
+        color $c-btn
+        text-align center
+        font-size w(24)
+        font-family $ff-BerlingskeSerif-Lt
+        line-height w(28)
+        width w(438)
+        margin 0 0 0 w(500)
+        z-index 2
+        a
+          color $c-linck
+          text-decoration underline
+
+    &__footer
+        position relative
+
+    &__footer-bg
+        width 100%
+        height w(368)
+
+    &__footer-patefon
+        position absolute
+        width w(289)
+        height w(494)
+        bottom w(80)
+        left w(100)
+        z-index 2
+
+    &__footer-table
+        position absolute
+        bottom w(210)
+        right 0
+        width w(831)
+        height w(717)
+
+
+
+            
+.okko
+    position relative
+    width w(358)
+    height w(272)
+    z-index 2
