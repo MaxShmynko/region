@@ -1,0 +1,385 @@
+.fantastic
+    position relative
+    font-family $ff-BerlingskeSerif-Lt
+    background-color $c-black
+    width 100%
+    height w(1080)
+    overflow-x hidden
+    +below(720px)
+        overflow hidden
+        height 100%
+
+    &__footer-bg
+        position absolute
+        bottom 0
+        left 0
+        width 100vw
+        img
+            width 100%
+        +below(720px)
+            display none
+
+    &__footer-bg-mobile
+        display none
+        img
+            width 100%
+        +below(720px)
+            position absolute
+            display block
+            bottom 0
+            left 0
+            width 100%
+            z-index 4
+
+    &__gramophone
+        position absolute
+        bottom 0
+        right 17%
+        z-index 3
+        width w(260)
+        img
+            width 100%
+        +below(720px)
+            display none
+
+    &__title-fantastic
+        position absolute
+        top 10%
+        left 6%
+        color #CD9B3D
+        font-size w(64)
+        font-weight 700
+        font-family $ff-BebasNeueBold
+        text-transform uppercase
+        max-width w(300)
+        +below(720px)
+            top 12%
+            left 20%
+            font-size wm(64)
+            max-width 100%
+            margin 0 auto
+            text-align center
+   
+    &__button
+        margin w(45) auto
+        position relative
+        width w(705) 
+        display flex
+        justify-content center
+        gap w(34)
+        z-index 5
+        +below(720px)
+            width 100%
+            margin-top wm(30)
+            gap wm(24)
+            flex-direction column
+            align-items center
+            margin-bottom wm(420)
+
+    
+    &__button-link
+        display flex
+        align-items center
+        justify-content center
+        text-transform uppercase
+        color $c-white
+        text-decoration none
+        font-family $ff-BebasNeueBold
+        background-color $c-btn
+        font-size w(38)
+        border-radius w(15)
+        width w(242)
+        height w(64)
+        transition 0.5s
+        &:hover
+            background-color $c-btn-hover
+        +below(720px)
+            width wm(242)
+            height wm(64)
+            border-radius wm(15)
+            font-size wm(28)
+            padding-top wm(10)
+    
+    &__slider
+        position relative
+        padding w(130) 26% 0
+        height 100%
+        +below(720px)
+            padding wm(275) wm(25) 0
+
+    &__item
+        padding-top w(100)
+
+    &__list__card
+        position relative
+
+    &__list__card-front
+        z-index 1
+        width w(930)
+        height w(650)
+        padding w(30) w(40)
+        background-size cover
+        background-image url('/images/card-bg.png')
+        text-align center
+        backface-visibility hidden
+        transition transform .3s cubic-bezier(.2,.85,.4,1.275)
+        +below(720px)
+            width 100%
+            height wm(980)
+            background-image url('/images/card-bg-mobile.png')
+
+    &__list__card-back
+        z-index 0
+        position absolute
+        top 0
+        width w(930)
+        height w(650)
+        padding w(30) w(40) w(80)
+        background-size cover
+        background-image url('/images/card-bg.png')
+        text-align center
+        backface-visibility hidden
+        transform rotateY(-180deg)
+        transition transform .3s cubic-bezier(.2,.85,.4,1.275)
+        display flex
+        flex-direction column
+        justify-content space-between
+        align-items center
+        +below(720px)
+            width 100%
+            height wm(980)
+            background-image url('/images/card-bg-mobile.png')
+            justify-content space-evenly
+
+    &__list__card-back-text
+        max-width w(690)
+        color #391702
+        font-size w(36)
+        font-weight 300
+        line-height w(48)
+        a
+            color #391702
+        +below(720px)
+            max-width 100%
+            font-size wm(36)
+            line-height wm(48)
+
+    &__list__card-back-link
+        color #391702
+        font-size w(24)
+        font-weight 300
+        line-height w(48)
+        a
+            color #BE041B
+        +below(720px)
+            font-size wm(24)
+            line-height wm(48)
+
+    &__list__card-back-close
+        align-self flex-end
+        width w(65)
+        img
+            width 100%
+        +below(720px)
+            width wm(65)
+
+    &__list__card-back-line
+        max-width w(480)
+        width 100%
+        height w(2)
+        background rgba(202, 158, 114, 0.50)
+        background-blend-mode multiply
+        +below(720px)
+            max-width 100%
+
+    &__list__card-tape
+        position absolute
+        z-index 3
+        right 5%
+        top -5%
+        width w(90)
+        img
+            width 100%
+        +below(720px)
+            width wm(90)
+            top -3%
+
+    &__list__card-voron
+        position absolute
+        z-index 3
+        right 35%
+        top -13%
+        width w(235)
+        img
+            width 100%
+        +below(720px)
+            display none
+
+    &__list__card-wrap
+        display flex
+        flex-direction row
+        justify-content flex-start
+        height w(600)
+        +below(720px)
+            flex-direction column
+            padding-top wm(120)
+
+    &__list__card-wrap-item
+        position relative
+        display flex
+        flex-direction column
+        &:last-child
+            margin-left w(35)
+        +below(720px)
+            height wm(600)
+
+    &__list__card-wrap-item-img
+        width w(400)
+        img
+            width 100%
+        +below(720px)
+            width wm(340)
+            height wm(250)
+
+    &__list__card-wrap-item-image
+        position absolute
+        z-index 2
+        bottom 30%
+        left 0%
+        width w(340)
+        img
+            width 100%
+        +below(720px)
+            width wm(300)
+            bottom 357%
+            left 54%
+    
+    &__list__card-wrap-item-text
+        text-align left
+        margin-top w(40)
+        padding w(20) 0 w(20)
+        max-width w(500)
+        color $c-black
+        font-size w(21)
+        font-weight 300
+        line-height w(32)
+        border-top w(1) solid rgba(202, 158, 114, 0.50)
+        border-bottom w(1) solid rgba(202, 158, 114, 0.50)
+        +below(720px)
+            margin-top wm(65)
+            padding wm(20) wm(50) wm(20)
+            max-width 100%
+            color $c-black
+            font-size wm(21)
+            line-height wm(32)
+            text-align center
+
+
+    &__list__card-wrap-item-button
+        margin-top w(500)
+        padding w(17) w(25)
+        text-transform uppercase
+        font-family $ff-BebasNeueBold
+        color $c-white
+        font-size w(36)
+        font-weight 700
+        line-height w(39)
+        text-align center
+        border-radius w(15)
+        background-image url(/images/bg-buttons.png)
+        background-size cover
+        background-repeat no-repeat
+        cursor pointer
+        align-self flex-end
+        +below(720px)
+            margin-top wm(35)
+            padding wm(17) wm(25)
+            font-size wm(36)
+            line-height wm(39)
+            border-radius wm(15)
+            align-self center
+
+    &__wrap__button
+        position absolute
+        z-index 1
+        top 60%
+        left 20%
+        max-width w(1100)
+        width 100%
+        display flex
+        flex-direction row
+        justify-content space-between
+        align-items center
+        +below(768px)
+            max-width 90vw
+            top -20%
+            left 0%
+            z-index 2
+
+    &__wrap__button-prev
+        width w(40)
+        height w(70)
+        cursor pointer
+        img
+            width 100%
+        +below(768px)
+            width wm(30)
+            height wm(60)
+
+    &__wrap__button-next
+        width w(40)
+        height w(70)
+        cursor pointer
+        img
+            width 100%
+        +below(768px)
+            width wm(30)
+            height wm(60)
+
+.logo
+    position absolute
+    width w(432)
+    height w(189)
+    top w(46)
+    right w(57)
+    z-index 2
+    +below(720px)
+        width wm(309)
+        height wm(135)
+        top wm(25)
+        right wm(45)
+.bg-sky
+    position absolute
+    top 0
+    left 0
+    width w(1400)
+    height w(270)
+    +below(720px)
+        width wm(837)
+        height wm(168)
+
+.flip-back {
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+.flip-front {
+    transform: rotateY(180deg);
+    z-index: -1;
+}
+.max-text{
+    max-width w(810)
+    @media (max-width: 720px) {
+        max-width 100%
+    }
+}
+.bottom-padding {
+    @media (max-width: 720px) {
+        bottom 400%
+    }
+}
+.main-link{
+    background-color $c-btn-hover 
+}
+.main-link:hover{
+    background-color $c-btn
+}      
