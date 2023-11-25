@@ -1,92 +1,101 @@
 mixin people()
     +b('section').people
         +e.header
-            img( class="bg-sky" src='/images/promo-bg-sky.png')
-            +e('p').logo-title ЛЮДИ
-            img( class="okko" src='/images/okko.png')
-            img( class="logo" src='/images/logo.svg')
+            img( class="bg-sky" src='/images/promo-bg-sky.png').fadeInLeft.wow(data-wow-duration="1.5s")
+            +e('p').logo-title.fadeInLeft.wow(data-wow-duration="1.5s") ЛЮДИ
+            img( class="okko" src='/images/okko.png').fadeInRight.wow(data-wow-duration="1.5s")
+            img( class="logo" src='/images/logo.svg').fadeInRight.wow(data-wow-duration="1.5s")
+
         +e.container
             +e.content
-                img(class="people__letter" src='/images/letter-popov.png')
-                +e.container-content-text
+                img(class="people__letter" src='/images/letter-popov.png').fadeInLeft.wow(data-wow-duration="1.5s")
+                +e.container-content-text.fadeInLeft.wow(data-wow-duration="1.5s")
                     +e.container-title.people__title-red лексей Попов
-                    +e.container-text Бывший снайпер спецназа. После увольнения из органов отправился в заслуженный запой, из которого его вывела родная сестра. Она рассказала Алеше про свою тяжелую болезнь и дочку Василису, которую ей, кроме как на брата, и оставить не на кого. Взялся тогда за ум Алеша, поборол Зеленого змия и устроился на работу в Волшебный участок, где теперь ловит разную сказочную нечисть. Но обуздать гномов, леших и оборотней оказалось куда проще, нежели справиться с 8-летней Василисой.
-                img(class="people__popov-img" src='/images/popov.png')
+                    +e.container-text Бывший снайпер спецназа. После увольнения из&nbsp;органов отправился в&nbsp;заслуженный запой, из&nbsp;которого его вывела родная сестра. Она рассказала Алеше про свою тяжелую болезнь и&nbsp;дочку Василису, которую&nbsp;ей, кроме как на&nbsp;брата, и&nbsp;оставить не&nbsp;на&nbsp;кого. Взялся тогда за&nbsp;ум&nbsp;Алеша, поборол Зеленого змия и&nbsp;устроился на&nbsp;работу в&nbsp;Волшебный участок, где теперь ловит разную сказочную нечисть. Но&nbsp;обуздать гномов, леших и&nbsp;оборотней оказалось куда проще, нежели справиться с&nbsp;8-летней Василисой.
+                img(class="people__popov-img" src='/images/popov.png').fadeInRight.wow(data-wow-duration="1.5s")
+                img(class="people__popov-img-mobail" src='/images/popov-mobail.png').fadeInRight.wow(data-wow-duration="1.5s")
 
             +e.content
-                img(class="people__letter people__letter-dwarf" src='/images/letter-gnome.png')
-                +e.container-content-text
+                img(class="people__letter people__letter-dwarf" src='/images/letter-gnome.png').fadeInRight.wow(data-wow-duration="1.5s")
+                +e.container-content-text.fadeInRight.wow(data-wow-duration="1.5s")
                     +e.container-title.people__title-dwarf ном-матерщинник
-                    +e.container-text.people__container-text-shift Мужчина хоть куда и в самом рассвете сил. И не смотрите, что ростом всего 25 см. Зато какая харизма! По собственному признанию, страдает синдромом Туретта, поэтому общается исключительно посредством мата. Наглый, шумный, невоспитанный тип, к тому же ещё не пропускает ни одной юбки. Несмотря на сплошные минусы, есть один огромный плюс ― Гном помогает Лехе и сотрудникам волшебного участка в поимке разного рода сказочной нечисти.
-                img(class="people__gramophone-img" src='/images/gramophone.png')
+                    +e.container-text.people__container-text-shift Мужчина хоть куда и&nbsp;в&nbsp;самом рассвете сил. И&nbsp;не&nbsp;смотрите, что ростом всего 25&nbsp;см. Зато какая харизма! По&nbsp;собственному признанию, страдает синдромом Туретта, поэтому общается исключительно посредством мата. Наглый, шумный, невоспитанный тип, к&nbsp;тому&nbsp;же ещё не&nbsp;пропускает ни&nbsp;одной юбки. Несмотря на&nbsp;сплошные минусы, есть один огромный плюс ― Гном помогает Лехе и&nbsp;сотрудникам волшебного участка в&nbsp;поимке разного рода сказочной нечисти.
+                img(class="people__gramophone-img" src='/images/gramophone.png').fadeInLeft.wow(data-wow-duration="1.5s")
+                img(class="people__gramophone-mobail-img" src='/images/gramophone-mobail.png').fadeInLeft.wow(data-wow-duration="1.5s")
                 
             +e.content
-                img(class="people__letter people__letter-vasilisa" src='/images/letter-vasilisa.png')
-                +e.container-content-text
+                img(class="people__letter people__letter-vasilisa" src='/images/letter-vasilisa.png').fadeInLeft.wow(data-wow-duration="1.5s")
+                +e.container-content-text.fadeInLeft.wow(data-wow-duration="1.5s")
                     +e.container-title.people__title-vasilisa асилиса
-                    +e.container-text.people__container-text-shift-less Маленькая, да удаленькая. С ней под силу справиться только настоящему герою. Своенравная, независимая, не по годам рассудительная и самостоятельная девочка. К тому же ещё и очень талантливая! Её рисунки восхищают не только людей, но и сказочных, которые видят в них нечто большее, чем простые детские каракули.
-                img(class="people__vasilisa-img" src='/images/vasilisa.png')
-                img(class="people__frog-img" src='/images/frog.png')
+                    img(class="people__vasilisa-mobail-img" src='/images/vasilisa-mobail-img.png')
+                    +e.container-text.people__container-text-shift-less Маленькая, да&nbsp;удаленькая. С&nbsp;ней под силу справиться только настоящему герою. Своенравная, независимая, не&nbsp;по&nbsp;годам рассудительная и&nbsp;самостоятельная девочка. К&nbsp;тому&nbsp;же ещё и&nbsp;очень талантливая! Её&nbsp;рисунки восхищают не&nbsp;только людей, но&nbsp;и&nbsp;сказочных, которые видят в&nbsp;них нечто большее, чем простые детские каракули.
+                img(class="people__vasilisa-img" src='/images/vasilisa.png').fadeInRight.wow(data-wow-duration="1.5s")
+                img(class="people__frog-img" src='/images/frog.png').fadeInRight.wow(data-wow-duration="1.5s")
 
             +e.content
-                img(class="people__letter people__letter-mikhalych" src='/images/letter-mikhalych.png')
-                +e.container-content-text
+                img(class="people__mikhalych-mobail-img" src='/images/mikhalych-mobail.png').fadeInRight.wow(data-wow-duration="1.5s")
+                img(class="people__letter people__letter-mikhalych" src='/images/letter-mikhalych.png').fadeInRight.wow(data-wow-duration="1.5s")
+                +e.container-content-text.fadeInRight.wow(data-wow-duration="1.5s")
                     +e.container-title.people__title-mikhalych ихалыч
-                    +e.container-text.people__container-text-mikhalych Майор полиции, начальник отдела по борьбе со сказочными преступлениями. Консервативен, неподкупен, предан своей работе и, конечно, усат. Несмотря на всю свою порядочность, из-за постоянных косяков Михалыча недолюбливает начальство. Он это прекрасно знает, поэтому всегда на стрессе. Зато своего босса обожают сотрудники участка, ведь он для них и царь, и бог, и государь, и дядька Черномор в одном флаконе.
-                img(class="people__mikhalych-img" src='/images/mikhalych.png')
+                    +e.container-text.people__container-text-mikhalych Майор полиции, начальник отдела по&nbsp;борьбе со&nbsp;сказочными преступлениями. Консервативен, неподкупен, предан своей работе&nbsp;и, конечно, усат. Несмотря на&nbsp;всю свою порядочность, из-за постоянных косяков Михалыча недолюбливает начальство. Он&nbsp;это прекрасно знает, поэтому всегда на&nbsp;стрессе. Зато своего босса обожают сотрудники участка, ведь он&nbsp;для них и&nbsp;царь, и&nbsp;бог, и&nbsp;государь, и&nbsp;дядька Черномор в&nbsp;одном флаконе.
+                img(class="people__mikhalych-img" src='/images/mikhalych.png').fadeInRight.wow(data-wow-duration="1.5s")
 
             +e.content
-                img(class="people__letter people__letter-fedorova" src='/images/letter-fedorova.png')
-                +e.container-content-text
+                img(class="people__letter people__letter-fedorova" src='/images/letter-fedorova.png').fadeInLeft.wow(data-wow-duration="1.5s")
+                +e.container-content-text.fadeInLeft.wow(data-wow-duration="1.5s")
                     +e.container-title.people__title-fedorova едотова елена
-                    +e.container-text.people__container-text-fedorova Капитан полиции. Работник недели, месяца и года. Лена ― эталонный трудоголик и в участке привыкла заниматься исключительно работой. Здесь она не приемлет дружеских, а уж тем более личных отношений. За свой суровый характер получила прозвище Несмеяна. Да и к чему веселиться, когда нечисть свободно разгуливает по городу? Несмотря на нордический характер (а может, и благодаря ему!), мужская половина отдела, особенно Степан Заяц, неровно к ней дышит.
-                img(class="people__fedorova-img" src='/images/fedorova.png')
-                img(class="people__prediety-img" src='/images/prediety.png')
+                    +e.container-text.people__container-text-fedorova Капитан полиции. Работник недели, месяца и&nbsp;года. Лена ― эталонный трудоголик и&nbsp;в&nbsp;участке привыкла заниматься исключительно работой. Здесь она не&nbsp;приемлет дружеских, а&nbsp;уж&nbsp;тем более личных отношений. За&nbsp;свой суровый характер получила прозвище Несмеяна. Да&nbsp;и&nbsp;к&nbsp;чему веселиться, когда нечисть свободно разгуливает по&nbsp;городу? Несмотря на&nbsp;нордический характер (а&nbsp;может, и&nbsp;благодаря ему!), мужская половина отдела, особенно Степан Заяц, неровно к&nbsp;ней дышит.
+                img(class="people__fedorova-img" src='/images/fedorova.png').fadeInRight.wow(data-wow-duration="1.5s")
+                img(class="people__prediety-img" src='/images/prediety.png').fadeInLeft.wow(data-wow-duration="1.5s")
+                img(class="people__fedorova-mobail-img" src='/images/fedorova-mobail.png').fadeInRight.wow(data-wow-duration="1.5s")
             
             +e.content
-                img(class="people__letter people__letter-hare" src='/images/letter-hare.png')
-                +e.container-content-text
+                img(class="people__letter people__letter-hare" src='/images/letter-hare.png').fadeInRight.wow(data-wow-duration="1.5s")
+                +e.container-content-text.fadeInRight.wow(data-wow-duration="1.5s")
                     +e.container-title.people__title-hare
                         +e('p') аяц
                         +e('p') степан
-                    +e.container-text.people__container-text-hare Старший лейтенант. В работе мягок, хотя и хочет производить впечатление плохого полицейского. Личная жизнь не устроена, попытки все исправить нередко приводят к проблемам, так как опыта общения с женщинами у Степана явно меньше, чем с той же нечистью. Несмотря на промахи, Михалыч доверяет ему сложные дела и ценные волшебные артефакты для повышения раскрываемости.
-                img(class="people__man-hare-img" src='/images/man-hare.svg')
+                    +e.container-text.people__container-text-hare Старший лейтенант. В&nbsp;работе мягок, хотя и&nbsp;хочет производить впечатление плохого полицейского. Личная жизнь не&nbsp;устроена, попытки все исправить нередко приводят к&nbsp;проблемам, так как опыта общения с&nbsp;женщинами у&nbsp;Степана явно меньше, чем с&nbsp;той&nbsp;же нечистью. Несмотря на&nbsp;промахи, Михалыч доверяет ему сложные дела и&nbsp;ценные волшебные артефакты для повышения раскрываемости.
+                img(class="people__man-hare-img" src='/images/man-hare.svg').fadeInLeft.wow(data-wow-duration="1.5s")
+                img(class="people__hare-mobail-img" src='/images/book.png').fadeInLeft.wow(data-wow-duration="1.5s")
 
             +e.content
-                img(class="people__letter people__letter-elizarov" src='/images/letter-elizarov.png')
-                +e.container-content-text
+                img(class="people__letter people__letter-elizarov" src='/images/letter-elizarov.png').fadeInLeft.wow(data-wow-duration="1.5s")
+                +e.container-content-text.fadeInLeft.wow(data-wow-duration="1.5s")
                     +e.container-title.people__title-elizarov лизаров
-                    +e.container-text.people__container-text-elizarov Руководитель службы собственной безопасности занимается поимкой оборотней в погонах. С утра очень похож на капитана Колпакова из «1703», но ближе к вечеру полностью теряет человеческий образ и превращается в клыкастого упыря. Благодаря огромному опыту отлично маскируется, ловко скрываясь в тени своих погон.
-                img(class="people__stars-img" src='/images/stars.png')
-                img(class="people__watering-can-img" src='/images/watering-can.png')
+                    +e.container-text.people__container-text-elizarov Руководитель службы собственной безопасности занимается поимкой оборотней в&nbsp;погонах. С&nbsp;утра очень похож на&nbsp;капитана Колпакова из&nbsp;&laquo;1703&raquo;, но&nbsp;ближе к&nbsp;вечеру полностью теряет человеческий образ и&nbsp;превращается в&nbsp;клыкастого упыря. Благодаря огромному опыту отлично маскируется, ловко скрываясь в&nbsp;тени своих погон.
+                img(class="people__stars-img" src='/images/stars.png').fadeInRight.wow(data-wow-duration="1.5s")
+                img(class="people__watering-can-img" src='/images/watering-can.png').fadeInRight.wow(data-wow-duration="1.5s")
 
             +e.content
-                img(class="people__letter people__letter-ravens" src='/images/letter-ravens.png')
-                +e.container-content-text
+                img(class="people__letter people__letter-ravens" src='/images/letter-ravens.png').fadeInRight.wow(data-wow-duration="1.5s")
+                +e.container-content-text.fadeInRight.wow(data-wow-duration="1.5s")
                     +e.container-title.people__title-ravens
                         +e('p') оронов
-                        +e('p') Вадим<br>Демидович
-                    +e.container-text.people__container-text-ravens Большая шишка ФСБ, связующее звено между сказочными и людьми. Очень неприятный и опасный человек, хотя чаще всего является в образе чёрного ворона. Загадочная личность, которую в отделе все сильно побаиваются, включая Михалыча. И небезосновательно! Ворон ведёт двойную игру и работает на Кощея, мечтая вместе с ним поработить человечество.
-                img(class="people__voron-img" src='/images/voron.svg')
-                img(class="people__stars-ravens-img" src='/images/stars.png')
+                        +e('p') Вадим<br> Демидович
+                    +e.container-text.people__container-text-ravens Большая шишка ФСБ, связующее звено между сказочными и&nbsp;людьми. Очень неприятный и&nbsp;опасный человек, хотя чаще всего является в&nbsp;образе чёрного ворона. Загадочная личность, которую в&nbsp;отделе все сильно побаиваются, включая Михалыча. И&nbsp;небезосновательно! Ворон ведёт двойную игру и&nbsp;работает на&nbsp;Кощея, мечтая вместе с&nbsp;ним поработить человечество.
+                img(class="people__voron-img" src='/images/voron.svg').fadeInRight.wow(data-wow-duration="1.5s")
+                img(class="people__stars-ravens-img" src='/images/stars.png').fadeInRight.wow(data-wow-duration="1.5s")
 
             +e.content
-                img(class="people__letter people__letter-krasnova" src='/images/letter-krasnova.png')
-                +e.container-content-text
+                img(class="people__letter people__letter-krasnova" src='/images/letter-krasnova.png').fadeInLeft.wow(data-wow-duration="1.5s")
+                +e.container-content-text.fadeInLeft.wow(data-wow-duration="1.5s")
                     +e.container-title.people__title-krasnova раснова<br>Валентина
-                    +e.container-text.people__container-text-krasnova Лейтенант. Самый незаменимый и недооценённый сотрудник отдела. Очень наблюдательна. Одна из немногих, кто умеет ориентироваться в секретном архиве участка, где хранятся сказочные вещдоки и волшебные артефакты, завладеть которыми пытаются и сказочные преступники, и обычные проходимцы.
+                    +e.container-text.people__container-text-krasnova Лейтенант. Самый незаменимый и&nbsp;недооценённый сотрудник отдела. Очень наблюдательна. Одна из&nbsp;немногих, кто умеет ориентироваться в&nbsp;секретном архиве участка, где хранятся сказочные вещдоки и&nbsp;волшебные артефакты, завладеть которыми пытаются и&nbsp;сказочные преступники, и&nbsp;обычные проходимцы.
 
-                +e.button 
+                +e.button.fadeInLeft.wow(data-wow-duration="1.5s")
                     +e('a').button-link(href='/index.html') на главную
-                    Смотри сериал «Волшебный участок» в онлайн-кинотеатре Okko.button-link(href='#') сказочные
+                    +e('a').button-link(href='#') сказочные
 
+            +e.vidio.fadeIn.wow(data-wow-duration="2s")
+                +e.vidio-wrap
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nLSBTq9DqMg?si=yfccU7Fv98S_mGJb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-            <iframe class="people__vidio" src="https://www.youtube.com/embed/nLSBTq9DqMg?si=n_jlY2LnvsftwHF7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-            +e.signature Смотри сериал «Волшебный участок» в онлайн-кинотеатре 
+            +e.signature.fadeIn.wow(data-wow-duration="2s") Смотри сериал &laquo;Волшебный участок&raquo; в&nbsp;онлайн-кинотеатре
                 +e('a') Okko
 
-            +e.footer
+            +e.footer.fadeIn.wow(data-wow-duration="2s")
                 img(class="people__footer-bg" src='/images/footer-people-bg.png')
                 img(class="people__footer-patefon" src='/images/footer-patefon.png')
                 img(class="people__footer-table" src='/images/footer-table.png')
+                img(class="people__footer-mobail-bg" src='/images/footer-mobail-bg.png')
