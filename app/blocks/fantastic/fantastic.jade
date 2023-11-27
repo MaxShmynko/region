@@ -1,40 +1,40 @@
 mixin fantastic()
     +b('section').fantastic
         +e.container
-            img( class="bg-sky" src='/images/promo-bg-sky.png')
-            img( class="logo" src='/images/logo.svg')
-            +e.footer-bg
+            img( class="bg-sky" src='/images/promo-bg-sky.png').fadeInLeft.wow(data-wow-duration="1.5s")
+            img( class="logo" src='/images/logo.svg').fadeInRight.wow(data-wow-duration="1.5s")
+            +e.footer-bg.fadeIn.wow(data-wow-duration="1.5s")
                 img(src='/images/magic-region-bg.png')
             +e.footer-bg-mobile
-                img(src='/images/magic-region-bg-mobile.png')
+                img(src='/images/magic-region-bg-mobile.png').fadeIn.wow(data-wow-duration="1.5s")
             +e.gramophone
                 img(src='/images/gramophone-region.png')
-            +e.title-fantastic СКАЗОЧНЫЕ злодеи
+            +e.title-fantastic.fadeInLeft.wow(data-wow-duration="1.5s") СКАЗОЧНЫЕ злодеи
             +e.slider
                 +e.wrap__list
                     +e.item
                         +e.list__card(id='1')
                             +e.list__card-front
-                                +e.list__card-tape
+                                +e.list__card-tape.fadeInLeft.wow(data-wow-duration="1.5s")
                                     img(src='/images/tape.png')
-                                +e.list__card-voron
+                                +e.list__card-voron.fadeInRight.wow(data-wow-duration="1.5s")
                                     img(src='/images/voron.png')
                                 +e.list__card-wrap
                                     +e.list__card-wrap-item
-                                        +e.list__card-wrap-item-img
+                                        +e.list__card-wrap-item-img.fadeInLeft.wow(data-wow-duration="1.5s")
                                             img(src='/images/fantastic-hero-name-1.png')
-                                        +e.list__card-wrap-item-text Находится под 200-летним домашним арестом после того, как выяснилось, что по её вине началась эпидемия Сovid-19. Не теряет энтузиазма и предприимчивости, поддерживает связь с коллегами по сказочному миру. В свободное время меняет внешность и подрабатывает вебкам-моделью.
+                                        +e.list__card-wrap-item-text.fadeInLeft.wow(data-wow-duration="1.5s") Находится под 200-летним домашним арестом после того, как выяснилось, что по&nbsp;её&nbsp;вине началась эпидемия Сovid-19. Не&nbsp;теряет энтузиазма и&nbsp;предприимчивости, поддерживает связь с&nbsp;коллегами по&nbsp;сказочному миру. В&nbsp;свободное время меняет внешность и&nbsp;подрабатывает вебкам-моделью.
                                     +e.list__card-wrap-item
-                                        +e.list__card-wrap-item-image
+                                        +e.list__card-wrap-item-image.fadeInRight.wow(data-wow-duration="1.5s")
                                             img(src='/images/fantastic-hero-1.png')
-                                        +e('a').list__card-wrap-item-button информатор?
+                                        +e('a').list__card-wrap-item-button.fadeInRight.wow(data-wow-duration="1.5s") информатор?
                             +e.list__card-back
                                 +e.list__card-voron
                                     img(src='/images/voron.png')
                                 +e.list__card-back-close
                                     img(src='/images/close.svg')
                                 +e.list__card-back-line
-                                +e.list__card-back-text.max-text Предприимчивости Яге и правда не занимать, и она удачно колдует и «нашим, и вашим», то есть и сказочным злодеям, и ОБСП (Отделу по борьбе со сказочными преступлениями). Без удовольствия, конечно, но что делать? Двухсотлетний срок сам себя не скостит!
+                                +e.list__card-back-text.max-text Предприимчивости Яге и&nbsp;правда не&nbsp;занимать, и&nbsp;она удачно колдует и&nbsp;&laquo;нашим, и&nbsp;вашим&raquo;, то&nbsp;есть и&nbsp;сказочным злодеям, и&nbsp;ОБСП (Отделу по&nbsp;борьбе со&nbsp;сказочными преступлениями). Без удовольствия, конечно, но&nbsp;что делать? Двухсотлетний срок сам себя не&nbsp;скостит!
                                 +e.list__card-back-line
                                 +e.list__card-back-link Подробности в сериале, уже на <a target='blank' href='https://okko.tv/serial/volshebnyjj-uchastok'>Okko</a>     
                     +e.item
@@ -48,7 +48,7 @@ mixin fantastic()
                                     +e.list__card-wrap-item
                                         +e.list__card-wrap-item-img
                                             img(src='/images/fantastic-hero-name-2.png')
-                                        +e.list__card-wrap-item-text Маньяк-шизофреник, который внезапно объявился в наших краях и теперь угрожает спалить весь город. Совсем не похож на сказочного трехглавого змея. На вид мужчина средних лет, но внутри него скрываются сразу три личности: сумасшедший пироманьяк, неуравновешенная женщина и капризный ребёнок.
+                                        +e.list__card-wrap-item-text Маньяк-шизофреник, который внезапно объявился в&nbsp;наших краях и&nbsp;теперь угрожает спалить весь город. Совсем не&nbsp;похож на&nbsp;сказочного трехглавого змея. На&nbsp;вид мужчина средних лет, но&nbsp;внутри него скрываются сразу три личности: сумасшедший пироманьяк, неуравновешенная женщина и&nbsp;капризный ребёнок.
                                     +e.list__card-wrap-item
                                         +e.list__card-wrap-item-image
                                             img(src='/images/fantastic-hero-2.png')
@@ -59,7 +59,7 @@ mixin fantastic()
                                 +e.list__card-back-close
                                     img(src='/images/close.svg')
                                 +e.list__card-back-line
-                                +e.list__card-back-text Ну уж нет! Змей-Горыныч сам с собой не может договориться, куда ему со следствием сотрудничать! Все его три личности ненавидят закон и порядок одинаково!
+                                +e.list__card-back-text Ну&nbsp;уж&nbsp;нет! Змей-Горыныч сам с&nbsp;собой не&nbsp;может договориться, куда ему со&nbsp;следствием сотрудничать! Все его три личности ненавидят закон и&nbsp;порядок одинаково!
                                 +e.list__card-back-line
                                 +e.list__card-back-link Подробности в сериале, уже на <a target='blank' href='https://okko.tv/serial/volshebnyjj-uchastok'>Okko</a>
                     +e.item
@@ -73,7 +73,7 @@ mixin fantastic()
                                     +e.list__card-wrap-item
                                         +e.list__card-wrap-item-img
                                             img(src='/images/fantastic-hero-name-3.png')
-                                        +e.list__card-wrap-item-text Воплощение чистого зла. Считался бессмертным, но тысячи лет назад добрые люди справились с ним, превратив в пыль и песок. Не помогло. Как оказалось, Кощей и правда бессмертный. Восстал из кучки пепла, превратился в оптоволокно и опутал паутиной весь мир, поселившись в интернете. Теперь думает, как бы поскорее оттуда выбраться и поработить человечество не только онлайн, но и в реальности.
+                                        +e.list__card-wrap-item-text Воплощение чистого зла. Считался бессмертным, но&nbsp;тысячи лет назад добрые люди справились с&nbsp;ним, превратив в&nbsp;пыль и&nbsp;песок. Не&nbsp;помогло. Как оказалось, Кощей и&nbsp;правда бессмертный. Восстал из&nbsp;кучки пепла, превратился в&nbsp;оптоволокно и&nbsp;опутал паутиной весь мир, поселившись в&nbsp;интернете. Теперь думает, как&nbsp;бы поскорее оттуда выбраться и&nbsp;поработить человечество не&nbsp;только онлайн, но&nbsp;и&nbsp;в&nbsp;реальности.
                                     +e.list__card-wrap-item
                                         +e.list__card-wrap-item-image.bottom-padding
                                             img(src='/images/fantastic-hero-3.png')
@@ -84,9 +84,9 @@ mixin fantastic()
                                 +e.list__card-back-close
                                     img(src='/images/close.svg')
                                 +e.list__card-back-line
-                                +e.list__card-back-text «Информация в руках злоумышленника Кощея. Ищи ответ в сериале <a target='blank' href='https://okko.tv/serial/volshebnyjj-uchastok'>"Волшебный участок"</a> в Okko».
+                                +e.list__card-back-text &quot;Информация в&nbsp;руках злоумышленника Кощея. Ищи ответ в&nbsp;сериале <a target='blank' href='https://okko.tv/serial/volshebnyjj-uchastok'>"Волшебный участок"</a> в Okko».
                                 +e.list__card-back-line
-                                +e.list__card-back-link Подробности в сериале, уже на <a target='blank' href='https://okko.tv/serial/volshebnyjj-uchastok'>Okko</a>        
+                                +e.list__card-back-link Подробности в&nbsp;сериале, уже&nbsp;на<a target='blank' href='https://okko.tv/serial/volshebnyjj-uchastok'>Okko</a>        
                     +e.item
                         +e.list__card(id='4')
                             +e.list__card-front
@@ -98,7 +98,7 @@ mixin fantastic()
                                     +e.list__card-wrap-item
                                         +e.list__card-wrap-item-img
                                             img(src='/images/fantastic-hero-name-4.png')
-                                        +e.list__card-wrap-item-text Сильная, холодная и властная женщина, под ледяным каблуком которой находятся тысячи узников «Сказочного централа». Настоящий авторитет. Перед ее чарами практически невозможно устоять, но сотрудники отдела, кажется, придумали, как справиться со сказочной ведьмой.
+                                        +e.list__card-wrap-item-text Сильная, холодная и&nbsp;властная женщина, под ледяным каблуком которой находятся тысячи узников &laquo;Сказочного централа&raquo;. Настоящий авторитет. Перед ее&nbsp;чарами практически невозможно устоять, но&nbsp;сотрудники отдела, кажется, придумали, как справиться со&nbsp;сказочной ведьмой.
                                     +e.list__card-wrap-item
                                         +e.list__card-wrap-item-image
                                             img(src='/images/fantastic-hero-4.png')
@@ -123,7 +123,7 @@ mixin fantastic()
                                     +e.list__card-wrap-item
                                         +e.list__card-wrap-item-img
                                             img(src='/images/fantastic-hero-name-5.png')
-                                        +e.list__card-wrap-item-text Ведут асоциальный образ жизни, занимаются нелегальным бизнесом. Ранее привлекались за мелкое хулиганство, но были отпущены за примерное поведение. Промышляют грабежами, используя шапки-невидимки и другие сказочные артефакты.
+                                        +e.list__card-wrap-item-text Ведут асоциальный образ жизни, занимаются нелегальным бизнесом. Ранее привлекались за&nbsp;мелкое хулиганство, но&nbsp;были отпущены за&nbsp;примерное поведение. Промышляют грабежами, используя шапки-невидимки и&nbsp;другие сказочные артефакты.
                                     +e.list__card-wrap-item
                                         +e.list__card-wrap-item-image
                                             img(src='/images/fantastic-hero-5.png')
@@ -134,7 +134,7 @@ mixin fantastic()
                                 +e.list__card-back-close
                                     img(src='/images/close.svg')
                                 +e.list__card-back-line
-                                +e.list__card-back-text У предприимчивых леших дела идут в гору! Но огласка им никак не нужна, так что лишних людей, особенно из ОБСП, Лешие в своём ИП видеть не хотят.
+                                +e.list__card-back-text У&nbsp;предприимчивых леших дела идут в&nbsp;гору! Но&nbsp;огласка им&nbsp;никак не&nbsp;нужна, так что лишних людей, особенно из&nbsp;ОБСП, Лешие в&nbsp;своём&nbsp;ИП видеть не&nbsp;хотят.
                                 +e.list__card-back-line
                                 +e.list__card-back-link Подробности в сериале, уже на <a target='blank' href='https://okko.tv/serial/volshebnyjj-uchastok'>Okko</a>
                     +e.item
@@ -148,7 +148,7 @@ mixin fantastic()
                                     +e.list__card-wrap-item
                                         +e.list__card-wrap-item-img
                                             img(src='/images/fantastic-hero-name-6.png')
-                                        +e.list__card-wrap-item-text Неоднократно судимый террорист-рецидивист. Короче, скользкий тип, и не только потому, что проживает на дне океана. В очередной раз сбежал из «Сказочного централа» и представляет огромную опасность для жителей города. На его поимку брошены лучшие силы отдела.
+                                        +e.list__card-wrap-item-text Неоднократно судимый террорист-рецидивист. Короче, скользкий тип, и&nbsp;не&nbsp;только потому, что проживает на&nbsp;дне океана. В&nbsp;очередной раз сбежал из&nbsp;&laquo;Сказочного централа&raquo; и&nbsp;представляет огромную опасность для жителей города. На&nbsp;его поимку брошены лучшие силы отдела.
                                     +e.list__card-wrap-item
                                         +e.list__card-wrap-item-image
                                             img(src='/images/fantastic-hero-6.png')
@@ -159,7 +159,7 @@ mixin fantastic()
                                 +e.list__card-back-close
                                     img(src='/images/close.svg')
                                 +e.list__card-back-line
-                                +e.list__card-back-text Хорошая попытка, но Русал — слишком скользкий тип. И из «Сказочного Централа» сбежал, и от приглашения поработать на благо закона и порядка отказался бы сразу.
+                                +e.list__card-back-text Хорошая попытка, но&nbsp;Русал&nbsp;&mdash; слишком скользкий тип. И&nbsp;из&nbsp;&laquo;Сказочного Централа&raquo; сбежал, и&nbsp;от&nbsp;приглашения поработать на&nbsp;благо закона и&nbsp;порядка отказался&nbsp;бы сразу.
                                 +e.list__card-back-line
                                 +e.list__card-back-link Подробности в сериале, уже на <a target='blank' href='https://okko.tv/serial/volshebnyjj-uchastok'>Okko</a>
                     +e.item
@@ -173,7 +173,7 @@ mixin fantastic()
                                     +e.list__card-wrap-item
                                         +e.list__card-wrap-item-img
                                             img(src='/images/fantastic-hero-name-7.png')
-                                        +e.list__card-wrap-item-text Энциклопедически образован. Имеет обширные связи в среде сказочных, где пользуется определённым авторитетом, несмотря на то, что сам к криминалу непричастен. Благодаря своему высочайшему IQ научился делать деньги из воздуха и целыми днями просиживает в недрах местной ТЭЦ, где круглосуточно майнит крипту.
+                                        +e.list__card-wrap-item-text Энциклопедически образован. Имеет обширные связи в&nbsp;среде сказочных, где пользуется определённым авторитетом, несмотря на&nbsp;то, что сам к&nbsp;криминалу непричастен. Благодаря своему высочайшему&nbsp;IQ научился делать деньги из&nbsp;воздуха и&nbsp;целыми днями просиживает в&nbsp;недрах местной ТЭЦ, где круглосуточно майнит крипту.
                                     +e.list__card-wrap-item
                                         +e.list__card-wrap-item-image
                                             img(src='/images/fantastic-hero-7.png')
@@ -184,7 +184,7 @@ mixin fantastic()
                                 +e.list__card-back-close
                                     img(src='/images/close.svg')
                                 +e.list__card-back-line
-                                +e.list__card-back-text.max-text Эх, если бы завербовать Кота, дела б в Волшебном участке пошли в гору! Но кот слишком хитёр и умеет зубы заговаривать: то сказку расскажет, то историю из непростой кошачьей жизни. Вот только пользы от его историй полиции никакой.
+                                +e.list__card-back-text.max-text Эх, если&nbsp;бы завербовать Кота, дела&nbsp;б в&nbsp;Волшебном участке пошли в&nbsp;гору! Но&nbsp;кот слишком хитёр и&nbsp;умеет зубы заговаривать: то&nbsp;сказку расскажет, то&nbsp;историю из&nbsp;непростой кошачьей жизни. Вот только пользы от&nbsp;его историй полиции никакой.
                                 +e.list__card-back-line
                                 +e.list__card-back-link Подробности в сериале, уже на <a target='blank' href='https://okko.tv/serial/volshebnyjj-uchastok'>Okko</a>
                     +e.item
@@ -198,7 +198,7 @@ mixin fantastic()
                                     +e.list__card-wrap-item
                                         +e.list__card-wrap-item-img
                                             img(src='/images/fantastic-hero-name-8.png')
-                                        +e.list__card-wrap-item-text После Чернобыльской катастрофы решили люди допускать сказочных до работы на важных стратегических предприятиях. Жар-птица с тех пор трудится на одной из ТЭЦ Москвы, обеспечивая энергетическую безопасность города. Но не всех это устраивает, и злодеи, вроде банды байкеров-человекомедведей, ведут постоянную охоту за важной птицей.
+                                        +e.list__card-wrap-item-textПосле Чернобыльской катастрофы решили люди допускать сказочных до&nbsp;работы на&nbsp;важных стратегических предприятиях. Жар-птица с&nbsp;тех пор трудится на&nbsp;одной из&nbsp;ТЭЦ Москвы, обеспечивая энергетическую безопасность города. Но&nbsp;не&nbsp;всех это устраивает, и&nbsp;злодеи, вроде банды байкеров-человекомедведей, ведут постоянную охоту за&nbsp;важной птицей.
                                     +e.list__card-wrap-item
                                         +e.list__card-wrap-item-image.bottom-padding
                                             img(src='/images/fantastic-hero-8.png')
@@ -209,7 +209,7 @@ mixin fantastic()
                                 +e.list__card-back-close
                                     img(src='/images/close.svg')
                                 +e.list__card-back-line
-                                +e.list__card-back-text.max-text Жар-птица — создание исключительное! Если другие сказочные герои все думают, как бы людям напакостить, она исключительно пользу приносит и с криминальными элементами не общается. По крайней мере, по своей воле!
+                                +e.list__card-back-text.max-text Жар-птица&nbsp;&mdash; создание исключительное! Если другие сказочные герои все думают, как&nbsp;бы людям напакостить, она исключительно пользу приносит и&nbsp;с&nbsp;криминальными элементами не&nbsp;общается. По&nbsp;крайней мере, по&nbsp;своей воле!
                                 +e.list__card-back-line
                                 +e.list__card-back-link Подробности в сериале, уже на <a target='blank' href='https://okko.tv/serial/volshebnyjj-uchastok'>Okko</a>
                 +e.wrap__button
@@ -218,7 +218,7 @@ mixin fantastic()
                     +e.wrap__button-next
                         img(src='/images/arrow-next.svg')
             +e.button
-                +e('a').button-link.main-link(href='/') на главную
-                +e('a').button-link(href='/people.html') люди
+                +e('a').button-link.main-link(href='/').fadeInLeft.wow(data-wow-duration="1.5s") на главную
+                +e('a').button-link(href='/people.html').fadeInRight.wow(data-wow-duration="1.5s") люди
                     
             
