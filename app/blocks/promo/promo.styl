@@ -30,7 +30,7 @@
 
 
     &__container-title-text
-        width w(544)
+        width w(490)
         +below(720px)
             width 100%
 
@@ -46,14 +46,22 @@
             left wm(20)
             top wm(190)
 
+    &__voron-bg
+        position absolute
+        width w(234)
+        right wm(270)
+        top wm(80)
+        +below(720px)
+            display none
+
     &__container-text 
         color $c-text
         margin-top w(22)
-        width w(705)
-        font-size w(18)
+        width w(800)
+        font-size w(21)
         font-family $ff-BerlingskeSerif-Lt
         font-weight 300
-        line-height w(24)
+        line-height w(27)
         +below(720px) 
             width wm(590)
             text-align center
@@ -75,11 +83,10 @@
             position absolute
             bottom 0
             width 100%
-            // height 1022
 
     &__button
         position relative
-        margin-top w(45)
+        margin-top w(35)
         width w(705) 
         display flex
         justify-content center

@@ -30,11 +30,12 @@
             align-items center
             padding wm(215) 0 0 wm(45)
         &:nth-child(2n+2)
-            padding-left w(530)
+            padding w(320) 0 0 w(540)
             +below(720px)
                 padding wm(215) 0 0 wm(45)
 
         &:nth-child(3)
+            padding w(380) 0 0 w(420)
             +below(720px)
                 padding wm(215) 0 0 0
 
@@ -66,12 +67,12 @@
 
         
 
-    &__container-title
-        position relative
-        font-size w(128)
-        font-weight 700
-        +below(720px)
-            font-size wm(100)
+    // &__container-title
+    //     position relative
+    //     font-size w(128)
+    //     font-weight 700
+    //     +below(720px)
+    //         font-size wm(100)
     
     &__letter
         position absolute
@@ -82,7 +83,7 @@
         +below(720px)
             width wm(287)
             height wm(359)
-            left wm(20)
+            left wm(-20)
 
     &__letter-dwarf
         top w(140)
@@ -175,122 +176,124 @@
             left wm(27)
 
     &__title-red
-        background conic-gradient(from 180deg at 21% 0%, #BE041B 0deg, #FF3500 360deg)
-        background-clip text
-        -webkit-background-clip text
-        -webkit-text-fill-color transparent
-        +below(720px)
-            padding-left wm(190)
-            background conic-gradient(from 180deg at 65% 40%, #BE041B 0deg, #FF3500 360deg)
-            background-clip text
-            -webkit-background-clip text
-            -webkit-text-fill-color transparent
+        img
+            width w(642)
+            height w(110)
+        // background conic-gradient(from 180deg at 50% 50%, #BE041B 0deg, #FF3500 360deg)
+        // background-clip text
+        // -webkit-background-clip text
+        // -webkit-text-fill-color transparent
+    //     +below(720px)
+    //         padding-left wm(140)
+    //         background conic-gradient(from 180deg at 100% 50%, #BE041B 0deg, #FF3500 360deg)
+    //         background-clip text
+    //         -webkit-background-clip text
+    //         -webkit-text-fill-color transparent
+    //         padding-top wm(10)
 
     &__title-dwarf
-        background conic-gradient(from 180deg at 32% 50%, #BE4320 0deg, #A1280C 101.22893929481506deg, #B0704A 341.23327016830444deg)
-        background-clip text
-        -webkit-background-clip text
-        -webkit-text-fill-color transparent
-        +below(720px)
-            padding-left wm(115)
-            background conic-gradient(from 180deg at 30% 90%, #BE4320 0deg, #A1280C 101.22893929481506deg, #B0704A 341.23327016830444deg)
-            background-clip text
-            -webkit-background-clip text
-            -webkit-text-fill-color transparent
+        img
+            width w(866)
+            height w(116)
+
+
+    //     +below(720px)
+    //         padding-left wm(115)
+    //         background conic-gradient(from 180deg at 30% 90%, #BE4320 0deg, #A1280C 101.22893929481506deg, #B0704A 341.23327016830444deg)
+    //         background-clip text
+    //         -webkit-background-clip text
+    //         -webkit-text-fill-color transparent
 
     &__title-vasilisa
-        background conic-gradient(from 180deg at 10% 90%, #4521E4 0deg, #FB832C 101.22893929481506deg, #3819EB 296.2324547767639deg, #C16975 358.1085705757141deg)
-        background-clip text
-        -webkit-background-clip text
-        -webkit-text-fill-color transparent
-        padding w(60) 0 0 w(40)
-        +below(720px)
-            padding wm(60) 0 0 wm(285)
-            background conic-gradient(from 180deg at 70% 90%, #4521E4 0deg, #FB832C 101.22893929481506deg, #3819EB 296.2324547767639deg, #C16975 358.1085705757141deg)
-            background-clip text
-            -webkit-background-clip text
-            -webkit-text-fill-color transparent
+        img
+            width w(480)
+            height w(102)
+    //     +below(720px)
+    //         padding wm(60) 0 0 wm(285)
+    //         background conic-gradient(from 180deg at 70% 90%, #4521E4 0deg, #FB832C 101.22893929481506deg, #3819EB 296.2324547767639deg, #C16975 358.1085705757141deg)
+    //         background-clip text
+    //         -webkit-background-clip text
+    //         -webkit-text-fill-color transparent
 
     &__title-mikhalych
-        background conic-gradient(from 180deg at 30% 70%, #3747E2 0deg, #B767B7 157.47994780540466deg, #528C6B 360deg)
-        background-clip text
-        -webkit-background-clip text
-        -webkit-text-fill-color transparent
-        padding w(125) 0 0 w(205)
-        +below(720px)
-            padding wm(90) 0 0 wm(275)
-            background conic-gradient(from 180deg at 68% 70%, #3747E2 0deg, #B767B7 157.47994780540466deg, #528C6B 360deg)
-            background-clip text
-            -webkit-background-clip text
-            -webkit-text-fill-color transparent
+            img
+                width w(375)
+                height w(103)
+                margin w(125) 0 0 w(205)
+    //     +below(720px)
+    //         padding wm(90) 0 0 wm(275)
+    //         background conic-gradient(from 180deg at 68% 70%, #3747E2 0deg, #B767B7 157.47994780540466deg, #528C6B 360deg)
+    //         background-clip text
+    //         -webkit-background-clip text
+    //         -webkit-text-fill-color transparent
 
-    &__title-fedorova
-        background conic-gradient(from 180deg at 27% 90%, #FEC059 0deg, #C23277 360deg)
-        background-clip text
-        -webkit-background-clip text
-        -webkit-text-fill-color transparent
-        padding w(60) 0 0 w(40)
-        +below(720px)
-            padding wm(10) 0 0 wm(225)
-            background conic-gradient(from 180deg at 55% 90%, #FEC059 0deg, #C23277 360deg)
-            background-clip text
-            -webkit-background-clip text
-            -webkit-text-fill-color transparent
+    // &__title-fedorova
+    //     background conic-gradient(from 180deg at 27% 90%, #FEC059 0deg, #C23277 360deg)
+    //     background-clip text
+    //     -webkit-background-clip text
+    //     -webkit-text-fill-color transparent
+    //     padding w(60) 0 0 w(40)
+    //     +below(720px)
+    //         padding wm(10) 0 0 wm(225)
+    //         background conic-gradient(from 180deg at 55% 90%, #FEC059 0deg, #C23277 360deg)
+    //         background-clip text
+    //         -webkit-background-clip text
+    //         -webkit-text-fill-color transparent
 
-    &__title-hare
-        padding w(50) 0 0 w(190)
-        p
-            background: conic-gradient(from 180deg at 100% 50%, #ECE61C 0deg, #E3A51C 174.3552589416504deg, #3CC734 346.85837745666504deg);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            &:last-child
-                background: conic-gradient(from 180deg at 23% 40%, #ECE61C 0deg, #E3A51C 174.3552589416504deg, #3CC734 346.85837745666504deg);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                padding 0 0 0 w(55)
-        +below(720px)
-            display flex
-            padding 0 0 0 wm(240)
+    // &__title-hare
+    //     padding w(50) 0 0 w(190)
+    //     p
+    //         background: conic-gradient(from 180deg at 100% 50%, #ECE61C 0deg, #E3A51C 174.3552589416504deg, #3CC734 346.85837745666504deg);
+    //         background-clip: text;
+    //         -webkit-background-clip: text;
+    //         -webkit-text-fill-color: transparent;
+    //         &:last-child
+    //             background: conic-gradient(from 180deg at 23% 40%, #ECE61C 0deg, #E3A51C 174.3552589416504deg, #3CC734 346.85837745666504deg);
+    //             background-clip: text;
+    //             -webkit-background-clip: text;
+    //             -webkit-text-fill-color: transparent;
+    //             padding 0 0 0 w(55)
+    //     +below(720px)
+    //         display flex
+    //         padding 0 0 0 wm(240)
 
-    &__title-elizarov
-        background conic-gradient(from 180deg at 19% 80%, #FEC059 0deg, #C23277 360deg)
-        background-clip text
-        -webkit-background-clip text
-        -webkit-text-fill-color transparent
-        padding w(60) 0 0 0
-        +below(720px)
-            padding 0 0 0 wm(190)
+    // &__title-elizarov
+    //     background conic-gradient(from 180deg at 19% 80%, #FEC059 0deg, #C23277 360deg)
+    //     background-clip text
+    //     -webkit-background-clip text
+    //     -webkit-text-fill-color transparent
+    //     padding w(60) 0 0 0
+    //     +below(720px)
+    //         padding 0 0 0 wm(190)
 
-    &__title-ravens
-        p
-            &:nth-child(1)
-                background: conic-gradient(from 180deg at 13% 50%, #391AF5 0deg, #E55D1A 142.47968316078186deg, #3716DD 253.10667514801025deg, #7D2E51 360deg);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                +below(720px)
-                    padding 0 0 0 wm(240)
+    // &__title-ravens
+    //     p
+    //         &:nth-child(1)
+    //             background: conic-gradient(from 180deg at 13% 50%, #391AF5 0deg, #E55D1A 142.47968316078186deg, #3716DD 253.10667514801025deg, #7D2E51 360deg);
+    //             background-clip: text;
+    //             -webkit-background-clip: text;
+    //             -webkit-text-fill-color: transparent;
+    //             +below(720px)
+    //                 padding 0 0 0 wm(240)
 
-            &:nth-child(2)
-                background: conic-gradient(from 180deg at 25% 70%, #391AF5 0deg, #E55D1A 142.47968316078186deg, #3716DD 253.10667514801025deg, #7D2E51 360deg);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                padding 0 0 0 w(75)
-                +below(720px)
-                    padding wm(20) 0 0 0
-                    br
-                        display none
+    //         &:nth-child(2)
+    //             background: conic-gradient(from 180deg at 25% 70%, #391AF5 0deg, #E55D1A 142.47968316078186deg, #3716DD 253.10667514801025deg, #7D2E51 360deg);
+    //             background-clip: text;
+    //             -webkit-background-clip: text;
+    //             -webkit-text-fill-color: transparent;
+    //             padding 0 0 0 w(75)
+    //             +below(720px)
+    //                 padding wm(20) 0 0 0
+    //                 br
+    //                     display none
 
-    &__title-krasnova
-        background conic-gradient(from 180deg at 50% 50%, #F4730B 0deg, #8CDBA7 119.9792754650116deg, #DCB229 360deg)
-        background-clip text
-        -webkit-background-clip text
-        -webkit-text-fill-color transparent
-        +below(720px)
-            padding 0 0 0 wm(220)
+    // &__title-krasnova
+    //     background conic-gradient(from 180deg at 50% 50%, #F4730B 0deg, #8CDBA7 119.9792754650116deg, #DCB229 360deg)
+    //     background-clip text
+    //     -webkit-background-clip text
+    //     -webkit-text-fill-color transparent
+    //     +below(720px)
+    //         padding 0 0 0 wm(220)
 
 
 
@@ -487,10 +490,10 @@
         top w(250)
         left w(80)
         +below(720px)
-            width wm(187)
-            height wm(516)
-            top wm(-380)
-            left wm(40)
+            width wm(111)
+            height wm(360)
+            top wm(-420)
+            left wm(150)
             z-index 3
 
     &__hare-mobail-img
