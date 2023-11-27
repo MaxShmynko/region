@@ -565,29 +565,22 @@
 
     
     &__button-link
-        display flex
-        align-items center
-        justify-content center
         text-transform uppercase
         color $c-white
         text-decoration none
         background-color $c-btn
         font-size w(48)
+        line-height w(39)
         border-radius w(15)
-        width w(295)
-        height w(64)
+        padding w(15) w(30)
         transition 0.5s
-        &:last-child
-            width w(242)
-            +below(720px)
-                width wm(242)
         &:hover
             background-color $c-btn-hover
         +below(720px)
-            width wm(295)
-            height wm(64)
+            padding wm(15) wm(32)
             border-radius wm(15)
             font-size wm(48)
+            line-height wm(39)
             padding-top wm(10)
 
     &__vidio

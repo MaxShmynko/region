@@ -78,26 +78,23 @@
 
     
     &__button-link
-        display flex
-        align-items center
-        justify-content center
         text-transform uppercase
         color $c-white
         text-decoration none
         font-family $ff-BebasNeueBold
         background-color $c-btn
         font-size w(38)
+        line-height w(29)
         border-radius w(15)
-        width w(242)
-        height w(64)
+        padding w(15) w(32)
         transition 0.5s
         &:hover
             background-color $c-btn-hover
         +below(720px)
-            width wm(242)
-            height wm(64)
+            padding wm(15) wm(32)
             border-radius wm(15)
             font-size wm(28)
+            line-height wm(19)
             padding-top wm(10)
     
     &__slider
