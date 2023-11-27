@@ -31,4 +31,19 @@ $(() => {
         $('.fantastic__list__card-back').addClass('flip-front');
         $('.fantastic__list__card-front').addClass('flip-back');
     });
+
+    $('.fantastic__wrap__button-next').click(function () {
+        $('.fantastic__list__card-back').removeClass('flip-back');
+        $('.fantastic__list__card-front').removeClass('flip-front');
+        $('.fantastic__list__card-back').addClass('flip-front');
+        $('.fantastic__list__card-front').addClass('flip-back');
+    });
+
+    $('.fantastic__wrap__button-prev').click(function () {
+        $('.fantastic__list__card-back').removeClass('flip-back');
+        $('.fantastic__list__card-front').removeClass('flip-front');
+        $('.fantastic__list__card-back').addClass('flip-front');
+        $('.fantastic__list__card-front').addClass('flip-back');
+    });
+    
 });
