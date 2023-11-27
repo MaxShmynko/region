@@ -20,7 +20,8 @@ mixin people()
                 img(class="people__letter people__letter-dwarf" src='/images/letter-gnome.png').fadeInRight.wow(data-wow-duration="1.5s")
                 +e.container-content-text
                     +e.container-title.people__title-dwarf.fadeInRight.wow(data-wow-duration="1.5s")
-                        img(src='/images/name-2.png')
+                        img(class="people__title-dwarf-bg" src='/images/name-2.png')
+                        img(class="people__title-dwarf-mobail-bg" src='/images/name-2-mobail-bg.png')
                     +e.container-text.people__container-text-shift.fadeInLeft.wow(data-wow-duration="1.5s") Мужчина хоть куда и&nbsp;в&nbsp;самом рассвете сил. И&nbsp;не&nbsp;смотрите, что ростом всего 25&nbsp;см. Зато какая харизма! По&nbsp;собственному признанию, страдает синдромом Туретта, поэтому общается исключительно посредством мата. Наглый, шумный, невоспитанный тип, к&nbsp;тому&nbsp;же ещё не&nbsp;пропускает ни&nbsp;одной юбки. Несмотря на&nbsp;сплошные минусы, есть один огромный плюс ― Гном помогает Лехе и&nbsp;сотрудникам волшебного участка в&nbsp;поимке разного рода сказочной нечисти.
                 img(class="people__gramophone-img" src='/images/gramophone.png').fadeInLeft.wow(data-wow-duration="1.5s")
                 img(class="people__gramophone-mobail-img" src='/images/gramophone-mobail.png').fadeInLeft.wow(data-wow-duration="1.5s")
@@ -47,8 +48,9 @@ mixin people()
             +e.content
                 img(class="people__letter people__letter-fedorova" src='/images/letter-fedorova.png').fadeInLeft.wow(data-wow-duration="1.5s")
                 +e.container-content-text
-                    +e.container-title.people__title-fedorova.fadeInLeft.wow(data-wow-duration="1.5s")
-                        img(src='/images/name-5.png') 
+                    +e.container-title.people__title-fedorova.fadeInRight.wow(data-wow-duration="1.5s")
+                        img(src='/images/name-5.png')
+                        img(src='/images/name-5-mobail-bg.png') 
                     +e.container-text.people__container-text-fedorova.fadeInRight.wow(data-wow-duration="1.5s") Капитан полиции. Работник недели, месяца и&nbsp;года. Лена ― эталонный трудоголик и&nbsp;в&nbsp;участке привыкла заниматься исключительно работой. Здесь она не&nbsp;приемлет дружеских, а&nbsp;уж&nbsp;тем более личных отношений. За&nbsp;свой суровый характер получила прозвище Несмеяна. Да&nbsp;и&nbsp;к&nbsp;чему веселиться, когда нечисть свободно разгуливает по&nbsp;городу? Несмотря на&nbsp;нордический характер (а&nbsp;может, и&nbsp;благодаря ему!), мужская половина отдела, особенно Степан Заяц, неровно к&nbsp;ней дышит.
                 img(class="people__fedorova-img" src='/images/fedorova.png').fadeInRight.wow(data-wow-duration="1.5s")
                 img(class="people__prediety-img" src='/images/prediety.png').fadeInLeft.wow(data-wow-duration="1.5s")
@@ -58,7 +60,8 @@ mixin people()
                 img(class="people__letter people__letter-hare" src='/images/letter-hare.png').fadeInRight.wow(data-wow-duration="1.5s")
                 +e.container-content-text
                     +e.container-title.people__title-hare.fadeInLeft.wow(data-wow-duration="1.5s")
-
+                        img(src='/images/name-6.png')
+                        img(src='/images/name-6-mobail-bg.png')
                     +e.container-text.people__container-text-hare.fadeInRight.wow(data-wow-duration="1.5s") Старший лейтенант. В&nbsp;работе мягок, хотя и&nbsp;хочет производить впечатление плохого полицейского. Личная жизнь не&nbsp;устроена, попытки все исправить нередко приводят к&nbsp;проблемам, так как опыта общения с&nbsp;женщинами у&nbsp;Степана явно меньше, чем с&nbsp;той&nbsp;же нечистью. Несмотря на&nbsp;промахи, Михалыч доверяет ему сложные дела и&nbsp;ценные волшебные артефакты для повышения раскрываемости.
                 img(class="people__man-hare-img" src='/images/man-hare.svg').fadeInLeft.wow(data-wow-duration="1.5s")
                 img(class="people__hare-mobail-img" src='/images/book.png').fadeInLeft.wow(data-wow-duration="1.5s")
@@ -66,7 +69,8 @@ mixin people()
             +e.content
                 img(class="people__letter people__letter-elizarov" src='/images/letter-elizarov.png').fadeInLeft.wow(data-wow-duration="1.5s")
                 +e.container-content-text
-                    +e.container-title.people__title-elizarov.fadeInLeft.wow(data-wow-duration="1.5s") 
+                    +e.container-title.people__title-elizarov.fadeInRight.wow(data-wow-duration="1.5s")
+                        img(src='/images/name-7.png') 
                     +e.container-text.people__container-text-elizarov.fadeInRight.wow(data-wow-duration="1.5s") Руководитель службы собственной безопасности занимается поимкой оборотней в&nbsp;погонах. С&nbsp;утра очень похож на&nbsp;капитана Колпакова из&nbsp;&laquo;1703&raquo;, но&nbsp;ближе к&nbsp;вечеру полностью теряет человеческий образ и&nbsp;превращается в&nbsp;клыкастого упыря. Благодаря огромному опыту отлично маскируется, ловко скрываясь в&nbsp;тени своих погон.
                 img(class="people__stars-img" src='/images/stars.png').fadeInRight.wow(data-wow-duration="1.5s")
                 img(class="people__watering-can-img" src='/images/watering-can.png').fadeInRight.wow(data-wow-duration="1.5s")
@@ -74,8 +78,10 @@ mixin people()
             +e.content
                 img(class="people__letter people__letter-ravens" src='/images/letter-ravens.png').fadeInRight.wow(data-wow-duration="1.5s")
                 +e.container-content-text
-                    +e.container-title.people__title-ravens.fadeInLeft.wow(data-wow-duration="1.5s")
-
+                    +e.container-title.people__title-ravens.fadeInRight.wow(data-wow-duration="1.5s")
+                        img(src='/images/name-8.png')
+                        img(src='/images/name-8-mobail-bg-1.png')
+                        img(src='/images/name-8-mobail-bg-2.png')
                     +e.container-text.people__container-text-ravens.fadeInRight.wow(data-wow-duration="1.5s") Большая шишка ФСБ, связующее звено между сказочными и&nbsp;людьми. Очень неприятный и&nbsp;опасный человек, хотя чаще всего является в&nbsp;образе чёрного ворона. Загадочная личность, которую в&nbsp;отделе все сильно побаиваются, включая Михалыча. И&nbsp;небезосновательно! Ворон ведёт двойную игру и&nbsp;работает на&nbsp;Кощея, мечтая вместе с&nbsp;ним поработить человечество.
                 img(class="people__voron-img" src='/images/voron.svg').fadeInRight.wow(data-wow-duration="1.5s")
                 img(class="people__stars-ravens-img" src='/images/stars.png').fadeInRight.wow(data-wow-duration="1.5s")
@@ -83,9 +89,10 @@ mixin people()
             +e.content
                 img(class="people__letter people__letter-krasnova" src='/images/letter-krasnova.png').fadeInLeft.wow(data-wow-duration="1.5s")
                 +e.container-content-text
-                    +e.container-title.people__title-krasnova.fadeInLeft.wow(data-wow-duration="1.5s") 
+                    +e.container-title.people__title-krasnova.fadeInLeft.wow(data-wow-duration="1.5s")
+                        img(src='/images/name-9.png') 
                     +e.container-text.people__container-text-krasnova.fadeInRight.wow(data-wow-duration="1.5s") Лейтенант. Самый незаменимый и&nbsp;недооценённый сотрудник отдела. Очень наблюдательна. Одна из&nbsp;немногих, кто умеет ориентироваться в&nbsp;секретном архиве участка, где хранятся сказочные вещдоки и&nbsp;волшебные артефакты, завладеть которыми пытаются и&nbsp;сказочные преступники, и&nbsp;обычные проходимцы.
-
+                img(class="people__footer-table" src='/images/footer-table.png').fadeInRight.wow(data-wow-duration="1.5s")
                 +e.button
                     +e('a').button-link(href='/index.html').fadeInLeft.wow(data-wow-duration="1.5s") на главную
                     +e('a').button-link(href='/fantastic.html').fadeInRight.wow(data-wow-duration="1.5s") сказочные
@@ -94,11 +101,10 @@ mixin people()
                 +e.vidio-wrap
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/nLSBTq9DqMg?si=yfccU7Fv98S_mGJb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-            +e.signature.fadeInLeft.wow(data-wow-duration="1.5s") Смотри сериал &laquo;Волшебный участок&raquo; в&nbsp;онлайн-кинотеатре 
-                +e('a') Okko
+                +e.signature.fadeInLeft.wow(data-wow-duration="1.5s") Смотри сериал &laquo;Волшебный участок&raquo; в&nbsp;онлайн-кинотеатре <a target='blank' href='https://okko.tv/serial/volshebnyjj-uchastok'>Okko</a> 
+
 
             +e.footer.fadeIn.wow(data-wow-duration="2s")
                 img(class="people__footer-bg" src='/images/footer-people-bg.png')
                 img(class="people__footer-patefon" src='/images/footer-patefon.png')
-                img(class="people__footer-table" src='/images/footer-table.png')
                 img(class="people__footer-mobail-bg" src='/images/footer-mobail-bg.png')

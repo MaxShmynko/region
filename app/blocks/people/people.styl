@@ -32,7 +32,7 @@
         &:nth-child(2n+2)
             padding w(320) 0 0 w(540)
             +below(720px)
-                padding wm(215) 0 0 wm(45)
+                padding wm(215) 0 0 0
 
         &:nth-child(3)
             padding w(380) 0 0 w(420)
@@ -55,24 +55,14 @@
             +below(720px)
                 padding wm(255) 0 0 wm(45)
         &:nth-child(8)
-            padding-left w(720)
-            padding-top w(260)
+            padding w(260) 0 0 w(705)
             +below(720px)
                 padding wm(160) 0 0 wm(27)
         &:nth-child(9)
-            padding-left w(420)
-            padding-top w(30)
+            padding w(30) 0 0 w(400)
             +below(720px)
                 padding wm(200) 0 0 wm(45)
 
-        
-
-    // &__container-title
-    //     position relative
-    //     font-size w(128)
-    //     font-weight 700
-    //     +below(720px)
-    //         font-size wm(100)
     
     &__letter
         position absolute
@@ -102,7 +92,7 @@
         +below(720px)
             width wm(280)
             height wm(350)
-            left wm(20)
+            left 0
 
     &__letter-mikhalych
         top w(160)
@@ -179,121 +169,114 @@
         img
             width w(642)
             height w(110)
-        // background conic-gradient(from 180deg at 50% 50%, #BE041B 0deg, #FF3500 360deg)
-        // background-clip text
-        // -webkit-background-clip text
-        // -webkit-text-fill-color transparent
-    //     +below(720px)
-    //         padding-left wm(140)
-    //         background conic-gradient(from 180deg at 100% 50%, #BE041B 0deg, #FF3500 360deg)
-    //         background-clip text
-    //         -webkit-background-clip text
-    //         -webkit-text-fill-color transparent
-    //         padding-top wm(10)
+            +below(720px)
+                width wm(486)
+                height wm(91)
+                margin wm(-20) 0 0 wm(145)
 
     &__title-dwarf
         img
             width w(866)
             height w(116)
+            &:nth-child(2)
+                display none
+            +below(720px)
+                width wm(491)
+                height wm(180)
+                margin wm(20) 0 0 wm(162)
+                &:nth-child(1)
+                    display none
+                &:nth-child(2)
+                    display block
 
 
-    //     +below(720px)
-    //         padding-left wm(115)
-    //         background conic-gradient(from 180deg at 30% 90%, #BE4320 0deg, #A1280C 101.22893929481506deg, #B0704A 341.23327016830444deg)
-    //         background-clip text
-    //         -webkit-background-clip text
-    //         -webkit-text-fill-color transparent
 
     &__title-vasilisa
         img
             width w(480)
             height w(102)
-    //     +below(720px)
-    //         padding wm(60) 0 0 wm(285)
-    //         background conic-gradient(from 180deg at 70% 90%, #4521E4 0deg, #FB832C 101.22893929481506deg, #3819EB 296.2324547767639deg, #C16975 358.1085705757141deg)
-    //         background-clip text
-    //         -webkit-background-clip text
-    //         -webkit-text-fill-color transparent
+            +below(720px)
+                margin wm(70) 0 0 wm(268)
+                width wm(305)
+                height 100%
 
     &__title-mikhalych
+        img
+            width w(375)
+            height w(103)
+            margin w(125) 0 0 w(205)
+            +below(720px)
+                width wm(275)
+                height 100%
+                margin wm(95) 0 0 wm(275)
+
+
+    &__title-fedorova
+        img
+            width w(680)
+            padding w(70) 0 0 w(45)
+            &:nth-child(2)
+                display none
+        +below(720px)
             img
-                width w(375)
-                height w(103)
-                margin w(125) 0 0 w(205)
-    //     +below(720px)
-    //         padding wm(90) 0 0 wm(275)
-    //         background conic-gradient(from 180deg at 68% 70%, #3747E2 0deg, #B767B7 157.47994780540466deg, #528C6B 360deg)
-    //         background-clip text
-    //         -webkit-background-clip text
-    //         -webkit-text-fill-color transparent
+                width wm(304)
+                margin 0 0 0 wm(210)
+                &:nth-child(1)
+                    display none
+                &:nth-child(2)
+                    display block
 
-    // &__title-fedorova
-    //     background conic-gradient(from 180deg at 27% 90%, #FEC059 0deg, #C23277 360deg)
-    //     background-clip text
-    //     -webkit-background-clip text
-    //     -webkit-text-fill-color transparent
-    //     padding w(60) 0 0 w(40)
-    //     +below(720px)
-    //         padding wm(10) 0 0 wm(225)
-    //         background conic-gradient(from 180deg at 55% 90%, #FEC059 0deg, #C23277 360deg)
-    //         background-clip text
-    //         -webkit-background-clip text
-    //         -webkit-text-fill-color transparent
+    &__title-hare
+        img
+            width w(500)
+            height w(280)
+            margin w(40) 0 0 w(190)
+            &:nth-child(2)
+                display none
+            +below(720px)
+                width wm(386)
+                height 100%
+                margin wm(7) 0 0 wm(290)
+                &:nth-child(1)
+                    display none
+                &:nth-child(2)
+                    display block
 
-    // &__title-hare
-    //     padding w(50) 0 0 w(190)
-    //     p
-    //         background: conic-gradient(from 180deg at 100% 50%, #ECE61C 0deg, #E3A51C 174.3552589416504deg, #3CC734 346.85837745666504deg);
-    //         background-clip: text;
-    //         -webkit-background-clip: text;
-    //         -webkit-text-fill-color: transparent;
-    //         &:last-child
-    //             background: conic-gradient(from 180deg at 23% 40%, #ECE61C 0deg, #E3A51C 174.3552589416504deg, #3CC734 346.85837745666504deg);
-    //             background-clip: text;
-    //             -webkit-background-clip: text;
-    //             -webkit-text-fill-color: transparent;
-    //             padding 0 0 0 w(55)
-    //     +below(720px)
-    //         display flex
-    //         padding 0 0 0 wm(240)
+    &__title-elizarov
+        img
+            width w(370)
+            margin w(70) 0 0 0
+            +below(720px)
+                width wm(341)
+                height 100%
+                margin wm(-2) 0 0 wm(180)
 
-    // &__title-elizarov
-    //     background conic-gradient(from 180deg at 19% 80%, #FEC059 0deg, #C23277 360deg)
-    //     background-clip text
-    //     -webkit-background-clip text
-    //     -webkit-text-fill-color transparent
-    //     padding w(60) 0 0 0
-    //     +below(720px)
-    //         padding 0 0 0 wm(190)
+    &__title-ravens
+        img
+            width w(599)
+            &:nth-child(2)
+                display none
+            &:nth-child(3)
+                display none
+            +below(720px)
+                &:nth-child(1)
+                    display none
+                &:nth-child(2)
+                    display block
+                    width wm(240)
+                    margin wm(5) 0 0 wm(240)
+                &:nth-child(3)
+                    display block
+                    width wm(659)
+                    margin wm(40) 0 0 0
 
-    // &__title-ravens
-    //     p
-    //         &:nth-child(1)
-    //             background: conic-gradient(from 180deg at 13% 50%, #391AF5 0deg, #E55D1A 142.47968316078186deg, #3716DD 253.10667514801025deg, #7D2E51 360deg);
-    //             background-clip: text;
-    //             -webkit-background-clip: text;
-    //             -webkit-text-fill-color: transparent;
-    //             +below(720px)
-    //                 padding 0 0 0 wm(240)
 
-    //         &:nth-child(2)
-    //             background: conic-gradient(from 180deg at 25% 70%, #391AF5 0deg, #E55D1A 142.47968316078186deg, #3716DD 253.10667514801025deg, #7D2E51 360deg);
-    //             background-clip: text;
-    //             -webkit-background-clip: text;
-    //             -webkit-text-fill-color: transparent;
-    //             padding 0 0 0 w(75)
-    //             +below(720px)
-    //                 padding wm(20) 0 0 0
-    //                 br
-    //                     display none
-
-    // &__title-krasnova
-    //     background conic-gradient(from 180deg at 50% 50%, #F4730B 0deg, #8CDBA7 119.9792754650116deg, #DCB229 360deg)
-    //     background-clip text
-    //     -webkit-background-clip text
-    //     -webkit-text-fill-color transparent
-    //     +below(720px)
-    //         padding 0 0 0 wm(220)
+    &__title-krasnova
+        img
+            width w(470)
+            +below(720px)
+                width wm(370)
+                margin wm(5) 0 0 wm(225)
 
 
 
@@ -311,8 +294,9 @@
         +below(720px)
             font-size wm(24)
             line-height wm(36)
-            width wm(614)
+            width 96%
             margin-top wm(55)
+            // padding 0 wm(39) 0 0
 
 
     &__container-text-shift
@@ -320,7 +304,8 @@
         width w(680)
         +below(720px)
             margin wm(175) 0 0 0
-            width wm(614)
+            padding 0 wm(39) 0 wm(45)
+            width 97%
 
     &__container-text-shift-less
         padding 0 w(110) 0 w(100)
@@ -343,15 +328,16 @@
         margin-left w(135)
         width w(782)
         +below(720px)
-            margin wm(20) 0 wm(400) 0
+            margin wm(40) 0 wm(400) 0
             width 91%
 
     &__container-text-hare
-        margin w(50) 0 0 w(250)
+        margin w(20) 0 0 w(250)
         width w(670)
         +below(720px)
             margin wm(50) 0 0 0
-            width 91%
+            width 88%
+            padding 0 0 0 wm(45)
 
     &__container-text-elizarov,
     &__container-text-ravens,
@@ -360,7 +346,7 @@
         width w(675)
         +below(720px)
             margin wm(160) 0
-            width 87%
+            width 88%
 
     &__container-text-ravens
         margin-left w(190)
@@ -438,7 +424,7 @@
             display block
             width 91%
             height wm(452)
-            margin-top wm(-65)
+            margin-top wm(-55)
 
     &__mikhalych-img
         position absolute
@@ -515,8 +501,8 @@
         +below(720px)
             width wm(222)
             height wm(288)
-            top wm(800)
-            right wm(60)
+            top wm(790)
+            right wm(40)
 
     &__stars-img
         position absolute
@@ -530,8 +516,8 @@
 
     &__voron-img
         position absolute
-        bottom w(300)
-        right w(495)
+        bottom w(293)
+        right w(570)
         z-index 2
         width w(338)
         height w(295)
@@ -584,12 +570,19 @@
             padding-top wm(10)
 
     &__vidio
-        padding  w(60) w(320) w(25) w(320)
+        display flex
+        justify-content center
+        flex-direction column
+        align-items center
+        padding  w(60) 0 w(25) 0
+        gap w(40)
         +below(720px)
-            padding wm(60) wm(35) wm(45) wm(45)
+            padding wm(60) 0 wm(45) 0
+            gap wm(20)
 
 
     &__vidio-wrap
+        margin-top w(40)
         width w(798)
         height w(383)
         iframe
@@ -608,7 +601,6 @@
         font-family $ff-BerlingskeSerif-Lt
         line-height w(28)
         width w(438)
-        margin 0 0 0 w(500)
         z-index 2
         a
           color $c-linck
@@ -654,7 +646,7 @@
 
     &__footer-table
         position absolute
-        bottom w(210)
+        top  w(-20)
         right 0
         width w(831)
         height w(717)
