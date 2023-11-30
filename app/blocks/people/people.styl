@@ -579,7 +579,7 @@
         justify-content center
         flex-direction column
         align-items center
-        padding  w(40) 0 w(25) 0
+        padding  w(40) 0 0 0
         gap w(40)
         +below(720px)
             padding wm(60) 0 wm(45) 0
@@ -619,7 +619,7 @@
 
     &__footer
         position relative
-        height w(368)
+        height w(320)
         +below(720px)
             height wm(450)
 
@@ -627,7 +627,7 @@
         position absolute
         bottom 0
         width 100%
-        height w(368)
+        height w(270)
         +below(720px)
             display none
     
@@ -673,6 +673,20 @@
             left auto
             left wm(15)
             bottom  wm(17)
+
+    &__author
+        position absolute
+        color $c-btn
+        text-align right
+        font-size w(21)
+        font-family $ff-BerlingskeSerif-Lt
+        bottom w(260)
+        right w(20)
+        +below(720px)
+            bottom wm(180)
+            right wm(10)
+            font-size wm(16)
+
 
     
 .okko
